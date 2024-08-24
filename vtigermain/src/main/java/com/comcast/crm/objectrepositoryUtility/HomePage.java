@@ -18,6 +18,9 @@ public class HomePage {
 	@FindBy(linkText="Contacts")
 	private WebElement contactlink;
 	
+	@FindBy(xpath="//a[text()='Products']")
+	private WebElement productLink;
+	
 	public WebElement getMorelink() {
 		return morelink;
 	}
@@ -30,6 +33,14 @@ public class HomePage {
 	public WebElement getAdminimg() {
 		return adminimg;
 	}
+	
+	
+
+	public WebElement getProductLink() {
+		return productLink;
+	}
+
+
 
 	public WebElement getSignoutlink() {
 		return signoutlink;
