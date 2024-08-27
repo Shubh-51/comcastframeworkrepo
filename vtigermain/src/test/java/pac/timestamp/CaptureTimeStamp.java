@@ -10,5 +10,7 @@ public class CaptureTimeStamp {
 		//any folder name do not accept spaces and special characters
 		String time=new Date().toString().replace(" ", "_").replace(":", "_");
 		System.out.println(time);
+		System.out.println("hi");
+		System.out.println("hi");
 	}
 }
