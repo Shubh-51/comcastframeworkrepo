@@ -15,9 +15,16 @@ public class ProductPage {
 	@FindBy(xpath="//img[@alt='Create Product...']")
 	private WebElement createNewProductBtn;
 	
+	@FindBy(name="search_text")
+	private WebElement editSearchTextfield;
 	
 	public WebElement getCreateNewProductBtn() {
 		return createNewProductBtn;
 	}
+
+	public WebElement getEditSearchTextfield() {
+		return editSearchTextfield;
+	}
+	
 	
 }
