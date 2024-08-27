@@ -1,5 +1,9 @@
 package com.comcast.crm.objectrepositoryUtility;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch 'master' of https://github.com/Shubh-51/comcastframeworkrepo.git
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,6 +17,7 @@ public class CreateNewProductPage {
 		PageFactory.initElements(driver,this);
 	}
 	
+<<<<<<< HEAD
 	
 	@FindBy(name="productname")
 	private WebElement editProductName;
@@ -22,5 +27,15 @@ public class CreateNewProductPage {
 	}
 	
 	
+=======
+	@FindBy(name="discontinued")
+	private WebElement editCheckbox;
+
+	public WebElement getEditCheckbox() {
+		return editCheckbox;
+	}
+>>>>>>> branch 'master' of https://github.com/Shubh-51/comcastframeworkrepo.git
 	
 }
+	
+
