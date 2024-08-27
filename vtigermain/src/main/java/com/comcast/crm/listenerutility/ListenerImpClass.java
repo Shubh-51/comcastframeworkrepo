@@ -20,7 +20,7 @@ public class ListenerImpClass implements ITestListener, ISuiteListener {
 
     public ExtentSparkReporter spark;
     public  ExtentReports report;
-    public static ExtentTest test;
+    public  ExtentTest test;
 
     @Override
     public void onStart(ISuite suite) {
@@ -61,10 +61,11 @@ public class ListenerImpClass implements ITestListener, ISuiteListener {
     public void onTestFailure(ITestResult result) {
         String testname = result.getMethod().getMethodName();
         String time = new Date().toString().replace(" ", "_").replace(":", "_");
+        UtilityClassObject.setDriver(BaseClass1.sdriver);
 
         // Check if test object is initialized
         if (test != null) {
-            TakesScreenshot ts = (TakesScreenshot) BaseClass1.sdriver;
+            TakesScreenshot ts = (TakesScreenshot)UtilityClassObject.getDriver();
             try {
                 String filepath = ts.getScreenshotAs(OutputType.BASE64);
                 test.addScreenCaptureFromBase64String(filepath, testname + "_" + time);

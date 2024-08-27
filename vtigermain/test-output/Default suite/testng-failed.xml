@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.comcast.testngassert.contacttest.ContactTest">
+      <class name="paclistener.testng.InvoiceTest1$InvoiceTest">
         <methods>
+          <include name="createInvoiceTest"/>
           <include name="bs"/>
           <include name="bc"/>
-          <include name="createContactTest"/>
           <include name="bm"/>
           <include name="am"/>
           <include name="As"/>
           <include name="Ac"/>
         </methods>
-      </class> <!-- com.crm.comcast.testngassert.contacttest.ContactTest -->
+      </class> <!-- paclistener.testng.InvoiceTest1$InvoiceTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
