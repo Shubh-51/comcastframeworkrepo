@@ -16,6 +16,7 @@ public class InvoiceTest1 {
 		public void createInvoiceTest() {
 			System.out.println("Execute createInvoiceTest");
 			String acttitle=driver.getTitle();
+			System.out.println(acttitle);
 			Assert.assertEquals(acttitle, "login");
 			System.out.println("Step-1");
 			System.out.println("Step-2");
