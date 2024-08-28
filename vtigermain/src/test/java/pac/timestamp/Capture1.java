@@ -2,7 +2,7 @@ package pac.timestamp;
 
 import java.util.Date;
 
-public class CaptureTime {
+public class Capture1 {
 	public static void main(String[] args) {
 		//String time=new Date().toString();
 		//System.out.println(time);
@@ -12,7 +12,5 @@ public class CaptureTime {
 		System.out.println(time);
 		System.out.println("hi");
 		System.out.println("hi");
-		
-		
 	}
 }
